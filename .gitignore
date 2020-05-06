@@ -1,0 +1,17 @@
+# Ignore all.
+/*
+
+# Include files.
+!.gitignore
+!composer.lock
+!composer.json
+
+# Include custom modules and themes.
+!/web
+/web/*
+!/web/modules
+!/web/themes
+/web/modules/*
+!/web/modules/custom
+/web/themes/*
+!/web/themes/custom
