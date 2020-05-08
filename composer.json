@@ -17,11 +17,13 @@
     "require": {
         "composer/installers": "^1.2",
         "drupal/admin_toolbar": "^2.2",
+        "drupal/asset_injector": "^2.6",
         "drupal/bootstrap": "^3.21",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/ctools": "^3.4",
+        "drupal/imce": "^2.2",
         "drupal/metatag": "^1.13",
         "drupal/pathauto": "^1.8",
         "drupal/token": "^1.7",
