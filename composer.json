@@ -23,6 +23,7 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/ctools": "^3.4",
+        "drupal/honeypot": "^2.0",
         "drupal/imce": "^2.2",
         "drupal/metatag": "^1.13",
         "drupal/pathauto": "^1.8",
