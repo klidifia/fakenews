@@ -2,7 +2,10 @@
 
 /**
  * @file
- * Bootstrap sub-theme.
- *
- * Place your custom PHP code in this file.
+ * Fakenews theme -- A Bootstrap sub-theme.
  */
+
+function fakenews_page_attachments_alter(&$page) {
+  $page['#attached']['library'][] = 'fakenews/twitter-js';
+}
+

@@ -32,3 +32,9 @@ framework:
 #    bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
 #    bootstrap/assets/javascripts/bootstrap/tab.js: {}
 #    bootstrap/assets/javascripts/bootstrap/transition.js: {}
+
+twitter-js:
+  header: true
+  js:
+     https://platform.twitter.com/widgets.js: { type: external, attributes: { async: true, defer: true } }
+
