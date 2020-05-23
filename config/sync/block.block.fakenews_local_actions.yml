@@ -1,0 +1,20 @@
+uuid: 13191e67-b974-4db9-9e7d-22a681e09e63
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fakenews
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: fakenews_local_actions
+theme: fakenews
+region: header
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

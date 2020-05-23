@@ -1,0 +1,25 @@
+uuid: e9701028-26ce-4279-abee-a1f1827277a9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6c8126f5-c5d8-4ac9-bad7-c2aac048478d'
+  module:
+    - block_content
+  theme:
+    - fakenews
+id: fakenews_copyright
+theme: fakenews
+region: footer
+weight: -4
+provider: null
+plugin: 'block_content:6c8126f5-c5d8-4ac9-bad7-c2aac048478d'
+settings:
+  id: 'block_content:6c8126f5-c5d8-4ac9-bad7-c2aac048478d'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

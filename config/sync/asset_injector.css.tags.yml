@@ -1,0 +1,17 @@
+uuid: 6b929196-0c4b-42db-a74c-b00a6d863fa4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: tags
+label: Tags
+code: ".views-row {\r\n  margin-bottom: 10px;\r\n}"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /tags
+    negate: false
+conditions_require_all: true

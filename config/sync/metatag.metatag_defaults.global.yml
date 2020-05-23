@@ -1,0 +1,13 @@
+uuid: 71c320ec-fe57-44d7-ad55-c81a61d882bd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  canonical_url: '[current-page:url]'
+  title: '[current-page:title] | [site:name]'
+  og_title: '[current-page:title]'
+  og_url: '[current-page:url]'

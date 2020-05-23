@@ -1,0 +1,22 @@
+uuid: 692d9180-f594-417b-99bd-ce815fcb0287
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - fakenews
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: fakenews_help
+theme: fakenews
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
