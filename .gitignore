@@ -15,3 +15,7 @@
 !/web/modules/custom
 /web/themes/*
 !/web/themes/custom
+
+# Include config.
+!/config
+!/config/sync
