@@ -44,6 +44,7 @@
         "drupal/metatag": "^1.13",
         "drupal/pathauto": "^1.8",
         "drupal/schema_metatag": "^1.4",
+        "drupal/simple_sitemap": "^3.6",
         "drupal/token": "^1.7",
         "drupal/webform": "^5.10",
         "drush/drush": "^10.2",
