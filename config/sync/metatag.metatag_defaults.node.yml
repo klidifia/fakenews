@@ -18,3 +18,4 @@ tags:
   og_updated_time: '[node:field_image:entity:changed]'
   og_image_type: '[node:field_image:entity:mime]'
   og_image_alt: '[node:field_image:alt]'
+  og_image: '[node:field_image:entity:url]'

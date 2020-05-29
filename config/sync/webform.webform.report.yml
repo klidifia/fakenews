@@ -12,7 +12,7 @@ id: report
 title: Report
 description: ''
 category: ''
-elements: "location:\n  '#type': textfield\n  '#title': 'Location or subject of the news'\n  '#required': true\ndetail:\n  '#type': textarea\n  '#title': 'Why is this news fake? Write a news article if you like.'\ncredit:\n  '#type': textfield\n  '#title': 'Credit details - do you want credit attributed if we make a story?'"
+elements: "location:\n  '#type': textfield\n  '#title': 'Location or subject of the news'\n  '#required': true\ndetail:\n  '#type': textarea\n  '#title': Detail\ncredit:\n  '#type': textfield\n  '#title': 'Credit details - do you want credit attributed if we make a story?'"
 css: ''
 javascript: ''
 settings:

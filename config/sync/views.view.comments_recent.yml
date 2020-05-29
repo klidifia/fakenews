@@ -1,6 +1,6 @@
 uuid: 2f215c64-a20b-4509-acb3-3ac97540bc85
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - comment

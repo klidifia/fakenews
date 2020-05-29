@@ -247,6 +247,13 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
+        simple_sitemap_display_extender:
+          index: true
+          variant: default
+          priority: '0.9'
+          changefreq: ''
+          arguments: {  }
+          max_links: 100
       path: tags
       menu:
         type: normal
