@@ -1,0 +1,23 @@
+uuid: 7ab547a2-29e9-4ebc-82e5-c67fe0c39726
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_image
+    - node.type.news
+id: node.news.field_display_image
+field_name: field_display_image
+entity_type: node
+bundle: news
+label: 'Display image on page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

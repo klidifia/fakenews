@@ -23,7 +23,10 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('content') }}>
-    {{ content }}
+    {% if "On" in content.field_display_image.0 %}
+      {{ content.field_image }}
+    {% endif %}
+    {{ content.body }}
   </div>
 
 </article>
