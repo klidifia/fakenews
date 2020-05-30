@@ -7,9 +7,11 @@ dependencies:
     - field.storage.node.field_image
     - image.style.news_thumb
     - node.type.news
+    - taxonomy.vocabulary.tags
   module:
     - image
     - node
+    - taxonomy
     - text
     - user
 id: news
@@ -37,27 +39,32 @@ display:
         type: views_query
         options:
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_comment: ''
           query_tags: {  }
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
-          reset_button: false
+          submit_button: Build
+          reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
+          expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: mini
+        type: full
         options:
           items_per_page: 10
           offset: 0
           id: 0
           total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -66,9 +73,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
+          quantity: 9
       style:
         type: default
       row:
@@ -364,6 +369,55 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        field_tags_target_id:
+          id: field_tags_target_id
+          table: node__field_tags
+          field: field_tags_target_id
+          relationship: none
+          group_type: group
+          admin_label: Tags
+          operator: and
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: o
+            label: 'Build your own category'
+            description: 'Filter news articles by tags'
+            use_operator: false
+            operator: field_tags_target_id_op
+            operator_limit_selection: true
+            operator_list:
+              or: or
+              and: and
+            identifier: tags
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tags
+          hierarchy: false
+          error_message: false
+          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created
@@ -383,16 +437,30 @@ display:
       title: 'That''s Fake News'
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: 'No news articles'
+          empty: true
+          tokenize: false
+          content: 'There are no articles matching all of the selected tags.'
+          plugin_id: text_custom
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -413,13 +481,25 @@ display:
           changefreq: ''
           arguments: {  }
           max_links: 100
-      path: home
+      path: news
+      exposed_block: false
+      menu:
+        type: none
+        title: News
+        description: News
+        expanded: false
+        parent: ''
+        weight: -50
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
