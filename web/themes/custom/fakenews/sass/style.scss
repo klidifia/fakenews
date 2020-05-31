@@ -1,0 +1,110 @@
+@import "articles";
+
+body {
+  margin-top: 0;
+}
+
+// Build your own category.
+form#views-exposed-form-news-news div.form-inline {
+  float: right;
+  max-width: 30%;
+
+  @media screen and (max-width: 992px) {
+    float: none;
+    max-width: 100%;
+  }
+
+  div.form-item-tags {
+    display: inline-block;
+
+    label {
+      display: block;
+    }
+
+    div.form-select {
+      display: inline-block;
+      height: unset;
+      padding: 0;
+      width: 100% !important;
+
+      ul.chosen-choices {
+        padding: 4px 5px 5px 5px;
+      }
+    }
+  }
+
+  div.form-group {
+    margin-bottom: 0;
+  }
+
+  .form-actions {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .form-actions button.form-submit {
+    padding: 8px 18px;
+  }
+}
+
+// Featured news.
+div.views-row:first-child {
+  max-width: 600px;
+
+  @media screen and (max-width: 992px) {
+    margin: 0 auto;
+  }
+
+  div.views-field-title h2 {
+    margin: 0;
+    padding: 5px 10px;
+
+    a {
+      color: #000;
+      font-size: 1.2em;
+    }
+  }
+
+  div.views-field-created {
+    display: none;
+  }
+
+  div.views-field-field-image {
+    max-height: 300px;
+    max-width: 600px;
+    height: unset;
+    width: 100%;
+  }
+
+  div.views-field-body {
+    clear: both;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    display: block;
+  }
+}
+
+// News teasers.
+div.views-row {
+  div.views-field-created {
+    margin-bottom: 5px;
+    color: #999;
+    font-size: 0.9em;
+  }
+
+  div.views-field-field-image {
+    float: left;
+    margin-right: 10px;
+    width: 200px;
+    height: 100px;
+  }
+
+  div.views-field-body {
+    min-height: 100px;
+  }
+}
+
+footer ul.nav > li > a {
+  display: inline-block;
+  padding: 0;
+}

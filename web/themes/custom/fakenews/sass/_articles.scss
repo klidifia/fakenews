@@ -1,0 +1,132 @@
+body.page-node-type-news {
+  h1.page-header {
+    margin: 0;
+  }
+
+  .author {
+    color: #999;
+    display: table-cell;
+    height: 40px;
+    padding-right: 94px;
+    vertical-align: middle;
+  }
+
+  .a2a_kit {
+    position: absolute;
+    right: 10px;
+    top: 0;
+
+    a span {
+      border-radius: 50% !important;
+      padding: 2px;
+    }
+  }
+
+  .field--name-field-image {
+    margin: 10px -15px;
+
+    @media screen and (min-width: 768px) {
+      float: left;
+      width: 49%;
+      margin: 0 1% 10px 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .container-main {
+      float: right;
+      width: 49%;
+      margin: 0 0 10px 1%;
+    }
+  }
+
+  div.images-50-50 {
+    clear: both;
+    margin-bottom: 20px;
+
+    img {
+      max-width: 49%;
+    }
+  }
+
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.15em;
+    vertical-align: -0.4em;
+  }
+  blockquote:after {
+    content: no-close-quote;
+  }
+  blockquote p {
+    display: inline;
+  }
+
+  p.cite {
+    margin: -28px 0 20px 20px;
+  }
+
+  ol, ul, blockquote {
+    width: auto;
+    overflow: hidden;
+  }
+
+  .video-container {
+    clear: both;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .facebook-container {
+    position: relative;
+    float: right;
+    margin-left: 10px;
+
+    iframe {
+      width: 340px;
+      height: 230px;
+    }
+  }
+
+  twitter-widget {
+    width: unset !important;
+  }
+
+  .field--name-field-tags {
+    margin-top: 20px;
+
+    .field--item {
+      display: inline-block;
+      background: #ededed;
+      padding: 5px;
+      margin: 0 5px 5px 0;
+      vertical-align: top;
+      line-height: 1.25em;
+
+      a {
+        color: #000;
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 25px;
+  }
+}
