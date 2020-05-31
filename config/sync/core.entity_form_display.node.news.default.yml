@@ -10,9 +10,9 @@ dependencies:
     - image.style.thumbnail
     - node.type.news
   module:
-    - chosen_field
     - image
     - path
+    - select2
     - text
 id: node.news.default
 targetEntityType: node
@@ -51,10 +51,14 @@ content:
     type: image_image
     region: content
   field_tags:
-    weight: 10
-    settings: {  }
+    weight: 26
+    settings:
+      width: 100%
+      match_operator: CONTAINS
+      match_limit: 10
+      autocomplete: false
     third_party_settings: {  }
-    type: chosen_select
+    type: select2_entity_reference
     region: content
   path:
     type: path

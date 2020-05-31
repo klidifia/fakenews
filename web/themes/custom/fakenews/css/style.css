@@ -140,9 +140,6 @@ form#views-exposed-form-news-news div.form-inline div.form-item-tags div.form-se
   padding: 0;
   width: 100% !important;
 }
-form#views-exposed-form-news-news div.form-inline div.form-item-tags div.form-select ul.chosen-choices {
-  padding: 4px 5px 5px 5px;
-}
 form#views-exposed-form-news-news div.form-inline div.form-group {
   margin-bottom: 0;
 }
@@ -151,7 +148,7 @@ form#views-exposed-form-news-news div.form-inline .form-actions {
   vertical-align: bottom;
 }
 form#views-exposed-form-news-news div.form-inline .form-actions button.form-submit {
-  padding: 8px 18px;
+  padding: 6px 12px;
 }
 
 div.views-row:first-child {

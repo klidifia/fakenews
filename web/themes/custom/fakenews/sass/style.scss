@@ -26,10 +26,6 @@ form#views-exposed-form-news-news div.form-inline {
       height: unset;
       padding: 0;
       width: 100% !important;
-
-      ul.chosen-choices {
-        padding: 4px 5px 5px 5px;
-      }
     }
   }
 
@@ -42,7 +38,7 @@ form#views-exposed-form-news-news div.form-inline {
     vertical-align: bottom;
   }
   .form-actions button.form-submit {
-    padding: 8px 18px;
+    padding: 6px 12px;
   }
 }
 

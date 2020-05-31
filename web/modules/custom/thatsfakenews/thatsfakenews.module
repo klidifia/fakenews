@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\Core\Form\FormStateInterface;
+
 /**
  * Implements hook_page_attachments_alter().
  */
@@ -11,3 +13,14 @@ function thatsfakenews_page_attachments_alter(array &$attachments) {
   }
 }
 
+/**
+ * Implements hook_form_alter().
+ */
+function thatsfakenews_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id !== 'views_exposed_form' && $form['#id'] !== 'views-exposed-form-news-news') {
+    return;
+  }
+
+  // Convert the tag exposed form select to a select2 widget.
+  $form['tags']['#type'] = 'select2';
+}
