@@ -21,6 +21,7 @@
       {{ node.getCreatedTime|format_date('long') }}
     </div>
   {% endif %}
+  {{ content.addtoany }}
 
   <div{{ content_attributes.addClass('content') }}>
     {% if "On" in content.field_display_image.0 %}
