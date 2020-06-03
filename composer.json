@@ -16,7 +16,6 @@
     ],
     "require": {
         "composer/installers": "^1.2",
-        "drupal/addtoany": "^1.14",
         "drupal/admin_toolbar": "^2.2",
         "drupal/bootstrap": "^3.21",
         "drupal/core-composer-scaffold": "^8.8",

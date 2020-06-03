@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cce9382b023d759f4dbb03b42f23c886",
+    "content-hash": "e5e758629ab26c6c8791a908055866b3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1550,58 +1550,6 @@
             "time": "2019-06-08T11:03:04+00:00"
         },
         {
-            "name": "drupal/addtoany",
-            "version": "1.14.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/addtoany.git",
-                "reference": "8.x-1.14"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.14.zip",
-                "reference": "8.x-1.14",
-                "shasum": "269ec4d1cfaf93132d5945edebf691ec7c04901a"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.14",
-                    "datestamp": "1589571718",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "AddToAny",
-                    "homepage": "https://www.drupal.org/user/2640913"
-                },
-                {
-                    "name": "micropat",
-                    "homepage": "https://www.drupal.org/user/260224"
-                }
-            ],
-            "description": "Share buttons for Drupal including the AddToAny universal share button, Facebook, Twitter, Pinterest, WhatsApp and many more.",
-            "homepage": "https://www.drupal.org/project/addtoany",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/addtoany",
-                "issues": "https://www.drupal.org/project/issues/addtoany"
-            }
-        },
-        {
             "name": "drupal/admin_toolbar",
             "version": "2.2.0",
             "source": {
@@ -1963,18 +1911,12 @@
                     "lib/Drupal/Core/Site/Settings.php"
                 ]
             },
-            "scripts": {
-                "pre-autoload-dump": [
-                    "Drupal\\Core\\Composer\\Composer::preAutoloadDump"
-                ],
-                "post-autoload-dump": [
-                    "Drupal\\Core\\Composer\\Composer::ensureHtaccess"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Drupal is an open source content management platform powering millions of websites and applications."
+            "description": "Drupal is an open source content management platform powering millions of websites and applications.",
+            "time": "2020-05-20T08:22:02+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -2012,6 +1954,7 @@
                     "Drupal\\Composer\\Plugin\\Scaffold\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -2019,7 +1962,8 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ]
+            ],
+            "time": "2020-03-10T10:15:17+00:00"
         },
         {
             "name": "drupal/core-project-message",
@@ -2048,6 +1992,7 @@
                     "Drupal\\Composer\\Plugin\\ProjectMessage\\": "."
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -2055,7 +2000,8 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ]
+            ],
+            "time": "2020-02-21T09:36:23+00:00"
         },
         {
             "name": "drupal/core-recommended",
@@ -2130,10 +2076,12 @@
                 "webflo/drupal-core-strict": "*"
             },
             "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Locked core dependencies; require this project INSTEAD OF drupal/core."
+            "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
+            "time": "2020-05-20T08:22:02+00:00"
         },
         {
             "name": "drupal/ctools",
