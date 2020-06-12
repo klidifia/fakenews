@@ -26,6 +26,7 @@ body.page-node-type-news .float-left {
 @media screen and (min-width: 768px) {
   body.page-node-type-news .float-left {
     float: left;
+    clear: left;
     width: 49%;
     margin: 0 1% 10px 0;
   }
@@ -82,9 +83,6 @@ body.page-node-type-news blockquote:after {
 body.page-node-type-news blockquote p {
   display: inline;
 }
-body.page-node-type-news p.cite {
-  margin: -28px 0 20px 20px;
-}
 body.page-node-type-news ol, body.page-node-type-news ul, body.page-node-type-news blockquote {
   width: auto;
   overflow: hidden;
@@ -116,6 +114,7 @@ body.page-node-type-news twitter-widget {
   width: unset !important;
 }
 body.page-node-type-news .field--name-field-tags {
+  clear: both;
   margin-top: 20px;
 }
 body.page-node-type-news .field--name-field-tags .field--item {
