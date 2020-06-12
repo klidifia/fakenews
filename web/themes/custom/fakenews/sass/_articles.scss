@@ -11,17 +11,6 @@ body.page-node-type-news {
     vertical-align: middle;
   }
 
-  .a2a_kit {
-    position: absolute;
-    right: 10px;
-    top: 0;
-
-    a span {
-      border-radius: 50% !important;
-      padding: 2px;
-    }
-  }
-
   .field--name-field-image {
     margin: 10px -15px;
 
@@ -29,6 +18,36 @@ body.page-node-type-news {
       float: left;
       width: 49%;
       margin: 0 1% 10px 0;
+    }
+  }
+
+  .float-left {
+    text-align: center;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+      float: left;
+      width: 49%;
+      margin: 0 1% 10px 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .float-right {
+    text-align: center;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+      float: right;
+      width: 49%;
+      margin: 0 0 10px 1%;
+    }
+
+    img {
+      max-width: 100%;
     }
   }
 
