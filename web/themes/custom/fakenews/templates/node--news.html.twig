@@ -21,7 +21,14 @@
       {{ node.getCreatedTime|format_date('long') }}
     </div>
   {% endif %}
-  {{ content.addtoany }}
+  <ul class="share">
+    <li>
+      <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}" class="facebook">Facebook</a>
+    </li>
+    <li>
+      <a target="_blank" href="https://twitter.com/intent/tweet?url={{ url('<current>') }}" class="twitter">Twitter</a>
+    </li>
+  </ul>
 
   <div{{ content_attributes.addClass('content') }}>
     {% if "On" in content.field_display_image.0 %}
