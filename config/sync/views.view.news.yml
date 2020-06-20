@@ -449,7 +449,20 @@ display:
             label: ''
           granularity: second
       title: 'That''s Fake News'
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: Header
+          empty: false
+          tokenize: false
+          content:
+            value: "We are looking for people to write news articles. If you wish to report some news and/or write an article, either as a once off or on an ongoing basis, please use our <a href=\"/report\">report form</a>.\r\n"
+            format: full_html
+          plugin_id: text
       footer: {  }
       empty:
         area_text_custom:

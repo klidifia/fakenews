@@ -6,11 +6,4 @@ _core:
   default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
 id: front
 label: 'Front page'
-tags:
-  canonical_url: '[site:url]'
-  description: 'Online media site debunking fake, misleading, or inaccurate statements'
-  shortlink: '[site:url]'
-  title: 'That''s Fake News'
-  og_image_secure_url: 'https://www.thatsfakenews.com/sites/default/files/fake-news-logo-large.png'
-  og_site_name: 'That''s Fake News'
-  og_description: 'Online media site debunking fake, misleading, or inaccurate statements'
+tags: {  }
