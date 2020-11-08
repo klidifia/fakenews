@@ -159,8 +159,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '{{ created }} (UTC)'
             make_link: false
             path: ''
             absolute: false
@@ -460,7 +460,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "We are looking for people to write news articles. If you wish to report some news and/or write an article, either as a once off or on an ongoing basis, please use our <a href=\"/report\">report form</a>.\r\n"
+            value: "\r\n"
             format: full_html
           plugin_id: text
       footer: {  }
