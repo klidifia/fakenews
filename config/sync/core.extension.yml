@@ -30,8 +30,6 @@ module:
   jquery_ui_datepicker: 0
   jquery_ui_draggable: 0
   jquery_ui_droppable: 0
-  jquery_ui_tabs: 0
-  jquery_ui_tooltip: 0
   layout_discovery: 0
   link: 0
   menu_ui: 0
