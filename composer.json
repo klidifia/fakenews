@@ -19,7 +19,6 @@
         "drupal/admin_toolbar": "^2.2",
         "drupal/bootstrap": "^3.22",
         "drupal/core-composer-scaffold": "^9.0.0",
-        "drupal/core-project-message": "^9.0.0",
         "drupal/core-recommended": "^9.0.0",
         "drupal/ctools": "^3.4",
         "drupal/google_analytics": "^3.1",
