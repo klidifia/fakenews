@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a90bb4c777513d3ac2527c521e4976f",
+    "content-hash": "dd7387782cb4465392f7d24609cf214b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2458,17 +2458,17 @@
         },
         {
             "name": "drupal/schema_metatag",
-            "version": "1.8.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/schema_metatag.git",
-                "reference": "8.x-1.8"
+                "reference": "8.x-2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/schema_metatag-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "dac50842bcac35607b0be8e28518e08fa3f6b66f"
+                "url": "https://ftp.drupal.org/files/projects/schema_metatag-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "67443d138dd8fe3555e882f28f5b5abf9236a554"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -2482,8 +2482,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1599905688",
+                    "version": "8.x-2.2",
+                    "datestamp": "1619640197",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
