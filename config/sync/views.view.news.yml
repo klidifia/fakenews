@@ -474,7 +474,7 @@ display:
           admin_label: 'No news articles'
           empty: true
           tokenize: false
-          content: 'There are no articles matching all of the selected tags.'
+          content: 'No news articles were found.'
           plugin_id: text_custom
       relationships: {  }
       arguments: {  }
