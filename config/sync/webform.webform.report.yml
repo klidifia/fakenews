@@ -12,7 +12,23 @@ id: report
 title: Report
 description: ''
 category: ''
-elements: "location:\n  '#type': textfield\n  '#title': 'Location or subject of the news'\n  '#more_title': 'What should I include here?'\n  '#more': 'You can include a link to some existing news article(s), or create your own headline that we may use.'\n  '#required': true\ndetail:\n  '#type': textarea\n  '#title': Detail\n  '#more_title': 'What should I write?'\n  '#more': 'Do not copy and paste from a news article, if you wish to reference an existing news article you can enter it (or them) here or above. You can use this to write a complete news article, or parts of it that we may use in creating one.'\ncredit:\n  '#type': textfield\n  '#title': 'Credit details'\n  '#more_title': 'What is this for'\n  '#more': 'Do you want credit attributed if we make a story? If you do, say so here and enter some details here, also contact details if you wish.'"
+elements: |-
+  location:
+    '#type': textfield
+    '#title': 'Location or subject of the news'
+    '#more_title': 'What should I include here?'
+    '#more': 'You can include a link to some existing news article(s), or create your own headline that we may use.'
+    '#required': true
+  detail:
+    '#type': textarea
+    '#title': Detail
+    '#more_title': 'What should I write?'
+    '#more': 'Do not copy and paste from a news article, if you wish to reference an existing news article you can enter it (or them) here or above. You can use this to write a complete news article, or parts of it that we may use in creating one.'
+  credit:
+    '#type': textfield
+    '#title': 'Credit details'
+    '#more_title': 'What is this for'
+    '#more': 'Do you want credit attributed if we make a story? If you do, say so here and enter some details here, also contact details if you wish.'
 css: ''
 javascript: ''
 settings:
