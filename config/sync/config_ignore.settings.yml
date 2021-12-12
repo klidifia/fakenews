@@ -1,4 +1,4 @@
-ignored_config_entities:
-  - 'simple_sitemap_engines.*'
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
+ignored_config_entities:
+  - 'simple_sitemap_engines.*'

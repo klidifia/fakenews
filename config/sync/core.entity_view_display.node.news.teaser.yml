@@ -20,22 +20,22 @@ bundle: news
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 1
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 1
     region: content
   field_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: news_thumb
       image_link: ''
+      image_style: news_thumb
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   addtoany: true
   field_display_image: true
