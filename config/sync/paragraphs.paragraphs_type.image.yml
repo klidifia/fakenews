@@ -1,0 +1,15 @@
+uuid: 304908e9-ac6d-4f48-8fc7-895f6d2b06dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: image
+label: Image
+icon_uuid: null
+icon_default: null
+description: 'An image'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

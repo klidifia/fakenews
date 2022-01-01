@@ -1,0 +1,15 @@
+uuid: 6f4fce98-f678-40e3-ac26-152263c3dbc0
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: html_content
+label: 'HTML Content'
+icon_uuid: null
+icon_default: null
+description: 'HTML content'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

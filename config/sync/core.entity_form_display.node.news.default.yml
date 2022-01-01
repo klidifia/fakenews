@@ -3,14 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.news.body
+    - field.field.node.news.field_content
     - field.field.node.news.field_display_image
     - field.field.node.news.field_image
+    - field.field.node.news.field_intro
     - field.field.node.news.field_tags
     - image.style.thumbnail
     - node.type.news
   module:
     - image
+    - layout_paragraphs
     - path
     - select2
     - text
@@ -19,9 +21,39 @@ targetEntityType: node
 bundle: news
 mode: default
 content:
-  body:
+  created:
+    type: datetime_timestamp
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_content:
+    type: layout_paragraphs
+    weight: 2
+    region: content
+    settings:
+      preview_view_mode: default
+      nesting_depth: 3
+      require_layouts: 1
+    third_party_settings: {  }
+  field_display_image:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_intro:
     type: text_textarea_with_summary
-    weight: 7
+    weight: 1
     region: content
     settings:
       rows: 9
@@ -29,30 +61,9 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  created:
-    type: datetime_timestamp
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_display_image:
-    type: boolean_checkbox
-    weight: 9
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  field_image:
-    type: image_image
-    weight: 8
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
   field_tags:
     type: select2_entity_reference
-    weight: 26
+    weight: 5
     region: content
     settings:
       width: 100%
@@ -62,13 +73,13 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 3
+    weight: 9
     region: content
     settings:
       display_label: true
@@ -82,7 +93,7 @@ content:
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 4
+    weight: 10
     region: content
     settings:
       display_label: true
@@ -97,7 +108,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 7
     region: content
     settings:
       match_operator: CONTAINS
