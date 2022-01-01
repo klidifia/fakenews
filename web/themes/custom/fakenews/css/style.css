@@ -22,11 +22,6 @@ body.page-node-type-news .intro {
     margin-right: 2%; } }
 body.page-node-type-news .intro .field--name-field-intro {
   margin: 15px; }
-body.page-node-type-news div.images-50-50 {
-  clear: both;
-  margin-bottom: 20px; }
-body.page-node-type-news div.images-50-50 img {
-  width: 48%; }
 body.page-node-type-news blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
@@ -47,12 +42,12 @@ body.page-node-type-news blockquote p {
 body.page-node-type-news ol, body.page-node-type-news ul, body.page-node-type-news blockquote {
   width: auto;
   overflow: hidden; }
-body.page-node-type-news .video-container {
+body.page-node-type-news .field--name-field-media-oembed-video {
   clear: both;
   position: relative;
   width: 100%;
   padding-bottom: 56.25%; }
-body.page-node-type-news .video {
+body.page-node-type-news .field--name-field-media-oembed-video .media-oembed-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -80,7 +75,7 @@ body.page-node-type-news .field--name-field-tags .field--item {
   line-height: 1.25em; }
 body.page-node-type-news .field--name-field-tags .field--item a {
   color: #000; }
-body.page-node-type-news .field--name-field-content {
+body.page-node-type-news .field--name-field-content .field--item {
   margin-bottom: 2%; }
 body.page-node-type-news .layout--twocol-section.layout--twocol-section--50-50 > div {
   flex: 0 1 100%; }
@@ -171,7 +166,7 @@ div.views-row:first-child div.views-field-title h2 a {
   font-size: 1.2em; }
 div.views-row:first-child div.views-field-created {
   display: none; }
-div.views-row:first-child div.views-field-field-image {
+div.views-row:first-child div.views-field-field-media {
   max-height: 300px;
   max-width: 600px;
   height: unset;
@@ -187,7 +182,7 @@ div.views-row div.views-field-created {
   margin-bottom: 5px;
   color: #999;
   font-size: 0.9em; }
-div.views-row div.views-field-field-image {
+div.views-row div.views-field-field-media {
   float: left;
   margin-right: 10px;
   width: 200px;

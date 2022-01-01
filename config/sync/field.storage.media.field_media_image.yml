@@ -1,14 +1,19 @@
-uuid: 96f5d3cd-4903-4a14-aeb6-eee33c9df660
+uuid: b3154dde-0674-4183-8326-485dbb0e5839
 langcode: en
 status: true
 dependencies:
   module:
     - file
     - image
-    - node
-id: node.field_image
-field_name: field_image
-entity_type: node
+    - media
+  enforced:
+    module:
+      - media
+_core:
+  default_config_hash: 0N0KSFk57p6qsq3qM4lYVGSuROvzXK-tSsdwByqUh3g
+id: media.field_media_image
+field_name: field_media_image
+entity_type: media
 type: image
 settings:
   target_type: file
@@ -16,7 +21,7 @@ settings:
   display_default: false
   uri_scheme: public
   default_image:
-    uuid: ''
+    uuid: null
     alt: ''
     title: ''
     width: null

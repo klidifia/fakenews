@@ -5,33 +5,21 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.news.field_content
-    - field.field.node.news.field_display_image
-    - field.field.node.news.field_image
     - field.field.node.news.field_intro
+    - field.field.node.news.field_media
     - field.field.node.news.field_tags
-    - image.style.news_thumb
     - node.type.news
   module:
-    - image
     - user
 id: node.news.teaser
 targetEntityType: node
 bundle: news
 mode: teaser
-content:
-  field_image:
-    type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: news_thumb
-    third_party_settings: {  }
-    weight: 0
-    region: content
+content: {  }
 hidden:
   addtoany: true
   field_content: true
-  field_display_image: true
   field_intro: true
+  field_media: true
   field_tags: true
   links: true

@@ -33,15 +33,6 @@ body.page-node-type-news {
     }
   }
 
-  div.images-50-50 {
-    clear: both;
-    margin-bottom: 20px;
-
-    img {
-      width: 48%;
-    }
-  }
-
   blockquote {
     background: #f9f9f9;
     border-left: 10px solid #ccc;
@@ -69,20 +60,22 @@ body.page-node-type-news {
     overflow: hidden;
   }
 
-  .video-container {
+  .field--name-field-media-oembed-video {
     clear: both;
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
+
+    .media-oembed-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
   }
-  .video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
+
   .facebook-container {
     position: relative;
     float: right;
@@ -116,7 +109,7 @@ body.page-node-type-news {
     }
   }
 
-  .field--name-field-content {
+  .field--name-field-content .field--item {
     margin-bottom: 2%;
   }
 

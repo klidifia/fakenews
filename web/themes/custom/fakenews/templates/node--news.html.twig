@@ -32,14 +32,11 @@
 
   <div{{ content_attributes.addClass('content') }}>
     <div class="intro">
-      {% if content.field_display_image['#items'].getValue()|first.value == "1" %}
-        <div class="main-image">
-          {{ content.field_image }}
-        </div>
-      {% endif %}
+      <div class="main-image">
+        {{ content.field_media }}
+      </div>
       {{ content.field_intro }}
     </div>
-    <div style="clear:both;"></div>
     {{ content.field_content }}
     {{ content.field_tags }}
   </div>
