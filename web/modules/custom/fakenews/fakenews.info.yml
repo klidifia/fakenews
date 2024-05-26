@@ -1,0 +1,5 @@
+name: Fake News
+description: Fake News module
+package: Custom
+core_version_requirement: ^9.2 || ^10
+type: module
