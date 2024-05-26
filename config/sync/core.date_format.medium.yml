@@ -1,4 +1,4 @@
-uuid: d637ff26-1069-46fe-b895-e9532bc5d460
+uuid: 536bee39-209d-4888-84aa-c26b37fa0faf
 langcode: en
 status: true
 dependencies: {  }
@@ -7,4 +7,4 @@ _core:
 id: medium
 label: 'Default medium date'
 locked: false
-pattern: 'D, d M Y - H:i'
+pattern: 'D, m/d/Y - H:i'

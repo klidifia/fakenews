@@ -1,4 +1,4 @@
-uuid: 57bfa721-f84e-4c5f-b2e0-a3e08aad6b21
+uuid: ac825a69-a7b3-4fab-acfc-dbdbf18e5339
 langcode: en
 status: true
 dependencies:
@@ -6,14 +6,14 @@ dependencies:
     - filter.format.basic_html
   module:
     - comment
+    - contact
+    - file
     - filter
-    - google_analytics
-    - media
     - search
     - shortcut
     - system
 _core:
-  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
 id: authenticated
 label: 'Authenticated user'
 weight: 1
@@ -22,9 +22,9 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
-  - 'opt-in or out of google analytics tracking'
+  - 'access site-wide contact form'
+  - 'delete own files'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
-  - 'view media'

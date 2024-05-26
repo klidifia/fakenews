@@ -1,9 +1,0 @@
-uuid: eb2a8a2d-91d0-4d2a-8668-1ad84db6d521
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
-id: front
-label: 'Front page'
-tags: {  }

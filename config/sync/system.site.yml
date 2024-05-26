@@ -1,15 +1,14 @@
 _core:
-  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
-uuid: 595885e2-028d-4b86-96ab-7aad1a6537db
-name: 'That''s Fake News'
+uuid: fa339065-e14b-426a-a23d-dac45f639b73
+name: 'Fake news'
 mail: klidifia@hotmail.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /news
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-mail_notification: ''
