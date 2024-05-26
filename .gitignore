@@ -5,6 +5,7 @@
 !.gitignore
 !composer.lock
 !composer.json
+!.lando.yml
 
 # ...and not these directories.
 !/config/
