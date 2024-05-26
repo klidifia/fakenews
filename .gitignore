@@ -1,21 +1,27 @@
 # Ignore all.
 /*
 
-# Include files.
+# But not these files...
 !.gitignore
 !composer.lock
 !composer.json
 
-# Include custom modules and themes.
-!/web
-/web/*
-!/web/modules
-!/web/themes
-/web/modules/*
-!/web/modules/custom
-/web/themes/*
-!/web/themes/custom
+# ...and not these directories.
+!/config/
+!/config/sync/
+!/web/
 
-# Include config.
-!/config
-!/config/sync
+# Within web, ignore everything...
+/web/*
+
+# ...but not these directories.
+!/web/modules/
+!/web/themes/
+
+# Within modules and themes, ignore everything...
+/web/modules/*
+/web/themes/*
+
+# ...but not these specific subdirectories.
+!/web/modules/custom/
+!/web/themes/custom/
