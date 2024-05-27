@@ -23,7 +23,7 @@ content:
     third_party_settings: {  }
   field_content:
     type: paragraphs
-    weight: 26
+    weight: 1
     region: content
     settings:
       title: Paragraph
