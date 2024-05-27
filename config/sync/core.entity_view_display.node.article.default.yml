@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.article.field_content
     - node.type.article
   module:
-    - entity_reference_revisions
+    - layout_paragraphs
     - user
 _core:
   default_config_hash: br6izr-iGEu--JvNbCJNtOBpRnxpFLXfoV5y61U9Nqc
@@ -16,7 +16,7 @@ bundle: article
 mode: default
 content:
   field_content:
-    type: entity_reference_revisions_entity_view
+    type: layout_paragraphs
     label: hidden
     settings:
       view_mode: default
