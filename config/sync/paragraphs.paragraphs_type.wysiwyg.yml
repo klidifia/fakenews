@@ -1,0 +1,10 @@
+uuid: 2ec29c3b-fb55-427b-b99f-3f595146096f
+langcode: en
+status: true
+dependencies: {  }
+id: wysiwyg
+label: WYSIWYG
+icon_uuid: null
+icon_default: null
+description: 'A WYSIWYG editor'
+behavior_plugins: {  }
